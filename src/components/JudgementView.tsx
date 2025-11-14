@@ -27,7 +27,7 @@ export function JudgementView({ user }: JudgementViewProps) {
   const [selectedCourt, setSelectedCourt] = useState('all');
   const [selectedCase, setSelectedCase] = useState<DismissedCase | null>(null);
 
-  // Generate dismissed cases for courts 1-20
+  // Generate dismissed cases for courts 1-26
   const mockDismissedCases: DismissedCase[] = [
     {
       id: '1',

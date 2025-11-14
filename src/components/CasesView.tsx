@@ -121,7 +121,7 @@ export function CasesView({ user }: CasesViewProps) {
   ];
 
   // Mock courts data
-  const mockCourts = Array.from({ length: 20 }, (_, i) => ({
+  const mockCourts = Array.from({ length: 26 }, (_, i) => ({
     id: `court-${i + 1}`,
     name: `Court ${i + 1}`,
     totalCases: Math.floor(Math.random() * 100) + 50,

@@ -28,8 +28,8 @@ export function CourtsView({ user }: CourtsViewProps) {
   const [isCreateCourtOpen, setIsCreateCourtOpen] = useState(false);
   const [isManageCourtsOpen, setIsManageCourtsOpen] = useState(false);
 
-  // Generate 20 courts with mock data
-  const mockCourts: Court[] = Array.from({ length: 20 }, (_, i) => {
+  // Generate 26 courts with mock data
+  const mockCourts: Court[] = Array.from({ length: 26 }, (_, i) => {
     const courtNumber = i + 1;
     const total = Math.floor(Math.random() * 100) + 50;
     const dismissed = Math.floor(Math.random() * 30) + 10;
