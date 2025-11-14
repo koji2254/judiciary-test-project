@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { Scale } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Label } from './ui/label';
+import Logo from '../assets/images/logo-2.png';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 
 interface LoginPageProps {
@@ -22,9 +22,11 @@ export function LoginPage({ onLogin }: LoginPageProps) {
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center p-4">
       <Card className="w-full max-w-md">
         <CardHeader className="space-y-4 text-center">
-          <div className="mx-auto w-20 h-20 bg-green-600 rounded-full flex items-center justify-center">
-            <Scale className="w-12 h-12 text-white" />
+          {/* Logo */}
+          <div className="mx-auto w-20 h-20 rounded-full flex items-center justify-center overflow-hidden bg-green-100">
+            <img src={Logo} alt="Court CMS Logo" className="w-full h-full object-cover" />
           </div>
+
           <CardTitle>Court Case Management System</CardTitle>
           <CardDescription>
             Sign in to access case records and management tools

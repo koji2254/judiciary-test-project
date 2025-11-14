@@ -2,6 +2,7 @@ import { Scale, LayoutDashboard, FolderOpen, Users, FileText, ChevronLeft, Chevr
 import { User } from '../App';
 import { ViewType } from './Dashboard';
 import { Button } from './ui/button';
+import Logo from '../assets/images/logo-2.png'
 
 interface SidebarProps {
   user: User;
@@ -29,11 +30,12 @@ export function Sidebar({ user, currentView, onViewChange, isOpen, onToggle }: S
         isOpen ? 'w-64' : 'w-20'
       } flex flex-col relative`}
     >
-      <div className="p-6 flex items-center gap-3 border-b border-green-800">
-        <div className="w-10 h-10 bg-green-600 rounded-lg flex items-center justify-center flex-shrink-0">
-          <Scale className="w-6 h-6" />
-        </div>
-        {isOpen && <span>Court CMS</span>}
+      <div className=" border p-6 flex items-center gap-3 border-b border-green-800">
+       <div className="w-10 h-10 flex items-center justify-center flex-shrink-0">
+        <img src={Logo} alt="Court CMS Logo" className="w-8 h-8 object-cover" />
+      </div>
+
+        {isOpen && <span className="text-green-900">ICT DEPARTMENT</span>}
       </div>
 
       <nav className="flex-1 p-4 space-y-2">
