@@ -116,7 +116,8 @@ export function UploadCourtSession() {
       setLoading(false);
     };
 
-    xhr.open('POST', 'http://13.60.9.123:8000/transcribe');
+    // xhr.open('POST', 'http://13.60.9.123:8000/transcribe');
+    xhr.open('POST', 'https://fill-lauderdale-studying-ensemble.trycloudflare.com/transcribe');
     xhr.send(formData);
   };
 
