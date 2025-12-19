@@ -117,7 +117,7 @@ export function UploadCourtSession() {
     };
 
     // xhr.open('POST', 'http://13.60.9.123:8000/transcribe');
-    xhr.open('POST', 'https://fill-lauderdale-studying-ensemble.trycloudflare.com/transcribe');
+    xhr.open('POST', 'https://apps.echosurveys.com.ng/transcribe');
     xhr.send(formData);
   };
 
