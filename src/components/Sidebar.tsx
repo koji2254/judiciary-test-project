@@ -3,6 +3,7 @@ import {
   LayoutDashboard,
   FolderOpen,
   Users,
+  Mic,
   FileText,
   ChevronLeft,
   ChevronRight,
@@ -36,7 +37,7 @@ export function Sidebar({
     { id: 'judgement', label: 'Judgement', icon: Gavel, roles: ['superadmin', 'admin'] },
     { id: 'folders', label: 'Folders & Files', icon: FolderOpen, roles: ['superadmin', 'admin'] },
     { id: 'admins', label: 'Admin Management', icon: Users, roles: ['superadmin'] },
-    { id: 'court-session', label: 'Upload Session', icon: Users, roles: ['superadmin', 'admin'] },
+    { id: 'court-session', label: 'Upload Session', icon: Mic, roles: ['superadmin', 'admin'] },
   ] as const;
 
   const filteredItems = menuItems.filter((item) =>
